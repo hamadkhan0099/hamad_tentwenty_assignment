@@ -101,7 +101,25 @@ class _MoviesListScreenState extends State<MoviesListScreen> {
                       ),
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => MoviesDetailScreen()));
+                            builder: (context) => MoviesDetailScreen(
+                                  posterLink:
+                                      "https://image.tmdb.org/t/p/original/${Provider.of<NetworkCall>(context, listen: false).getMoviesData().results![index].posterPath}",
+                                  movieName: Provider.of<NetworkCall>(context,
+                                          listen: false)
+                                      .getMoviesData()
+                                      .results![index]
+                                      .originalTitle,
+                              details: Provider.of<NetworkCall>(context,
+                                  listen: false)
+                                  .getMoviesData()
+                                  .results![index]
+                                  .overview,
+                              releaseDate: Provider.of<NetworkCall>(context,
+                                  listen: false)
+                                  .getMoviesData()
+                                  .results![index]
+                                  .releaseDate,
+                                )));
                       },
                     ),
                     new SizedBox(
