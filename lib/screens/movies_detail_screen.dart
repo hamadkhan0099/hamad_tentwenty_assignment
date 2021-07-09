@@ -79,7 +79,7 @@ class _MoviesDetailScreenState extends State<MoviesDetailScreen> {
               style: new TextStyle(
                 fontSize: 18,
               ),
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.center ,
             ),
           ),
         ],
