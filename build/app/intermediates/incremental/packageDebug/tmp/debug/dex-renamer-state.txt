@@ -1,0 +1,4 @@
+#Thu Jul 08 20:45:19 PKT 2021
+base.0=/home/hamad/Hamad Data/hamad_tentwenty_assignment/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
